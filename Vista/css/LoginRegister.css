@@ -1,0 +1,216 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+.seccion-imagen{
+    background-image: url(../img/login.jpg);
+    background-size: cover;
+    max-height: 100vh;
+    width: 25vw;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    color: white;
+    position: relative;
+}
+
+.seccion-imagen h1{
+    font-size: 50px;
+    margin: 0px;
+}
+
+.texto {
+    position: absolute;
+    top: 35vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.imagen{
+    width: 75%;
+}
+
+.seccion-formulario{
+    height: 100vh;
+    max-width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding-right: 300px;
+    padding-left: 100px;
+}
+.seccion-formulario p {
+    margin-top: 0px;
+}
+
+.seccion-formulario h1 {
+    margin-bottom: 0px;
+}
+
+.seccion-formulario-register h1{
+    margin-top: 0px;
+}
+
+.linea{
+    border-top: 2px solid black;
+    width: 85px;
+    margin: 10px 0px;
+    margin-bottom: 35px;
+    display: block;
+}
+
+.contenedor-error{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.boton-salir{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #9300c0;
+    display: inherit;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+
+.boton-salir:hover{
+    color: #9300c0;
+    background-color: white;
+    cursor: pointer;
+}
+
+.formulario{
+    position: relative;
+}
+
+.formulario-register{
+    position: relative;
+    top: -30px;
+}
+
+.boton-iniciar{
+    background: transparent;
+    border: 2px solid #9300c0;
+    color: #9300c0;
+    border-radius: 50px;
+    height: 45px;
+    width: 150px;
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+    outline: none;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    right: 0;
+}
+
+.boton-iniciar:hover {
+    background-color: #9300c0;
+    color: white;
+    cursor: pointer;
+}
+
+.mensaje-error{
+    color: #ff4848;
+    font-size: 10px;
+}
+
+.imput-text{
+    background: transparent;
+    border: none;
+    width: 300px;
+    height: 50px;
+    border-bottom: 1px solid gray;   
+    margin-bottom: 40px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+.imput-text-register {
+    margin-bottom: 20px;
+}
+
+.imput-text:focus { 
+    border-bottom: 1px solid #9300c0; 
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?4266752');
+    src: url('../fonts/fontello.eot?4266752#iefix') format('embedded-opentype'),
+         url('../fonts/fontello.woff2?4266752') format('woff2'),
+         url('../fonts/fontello.woff?4266752') format('woff'),
+         url('../fonts/fontello.ttf?4266752') format('truetype'),
+         url('../fonts/fontello.svg?4266752#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+  /*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'fontello';
+      src: url('../font/fontello.svg?4266752#fontello') format('svg');
+    }
+  }
+  */
+   
+   [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+   
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+   
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+   
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+   
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+   
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+   
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+   
+  .icon-cancel:before { content: '\e801'; } /* '' */

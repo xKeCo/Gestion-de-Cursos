@@ -1,0 +1,133 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   width: 85vw;
+   height: 100vh;
+   margin: 0 auto;
+   font-family: "Open Sans", sans-serif;
+   font-weight: normal;
+}
+
+.nav-bar {
+   width: 78vw;
+   height: 10vh;
+   margin: 30px 0;
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   align-content: center;
+   justify-content: space-between;
+}
+
+.logo {
+   font-size: 40px;
+   text-decoration: none;
+}
+
+.contenedor {
+   display: flex;
+   justify-content: space-around;
+   height: 500px;
+   position: relative;
+}
+
+.Primera {
+   /* max-height: 95vh; */
+   width: 90vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.Primera h1 {
+   font-size: 80px;
+   margin-bottom: 25px;
+   color: #ffd766;
+}
+.primera-detalles {
+   display: flex;
+   flex-direction: column;
+   margin-left: 80px;
+}
+
+.Primera p {
+   font-size: 20px;
+   width: 75%;
+}
+
+.Segunda {
+   position: relative;
+   width: 50vw;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.Segunda figure {
+   position: absolute;
+   bottom: 0;
+   padding: 40px;
+   display: flex;
+   margin: auto;
+}
+
+.registrarse {
+   height: 30px;
+   width: 125px;
+   border: 2px solid #9300c0;
+   border-radius: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: #9300c0;
+   text-decoration: none;
+}
+
+.iniciar-sesion {
+   height: 30px;
+   width: 125px;
+   border: 2px solid #9300c0;
+   border-radius: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: white;
+   background-color: #9300c0;
+   text-decoration: none;
+}
+
+.comenzar {
+   height: 45px;
+   width: 150px;
+   border: 2px solid #9300c0;
+   border-radius: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: white;
+   background-color: #9300c0;
+   text-decoration: none;
+   margin-top: 20px;
+}
+
+ol {
+   display: flex;
+   align-items: center;
+   list-style: none;
+}
+
+li {
+   display: flex;
+   align-content: center;
+   margin: 0 10px;
+   list-style: none;
+}
+
+.logo {
+   width: 150px;
+}
