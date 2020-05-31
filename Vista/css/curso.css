@@ -22,13 +22,11 @@ body {
 .perfil:before {
    content: "";
    position: absolute;
-   background: linear-gradient(90deg, #9300c0 0%, #e100ff 100%);
+   background-color: #fbb540;
    width: 27vw;
    height: 100vh;
    top: 0;
    left: 0;
-   /* border-radius: 0 100% 100% 0 / 0 100% 100% 0; */
-   transform: scaleY(1.2);
 }
 
 .mensaje-error {
@@ -62,23 +60,18 @@ body {
    margin: 0 40px;
 }
 
-.logo {
-   width: 200px;
-   margin-bottom: 30px;
-}
-
 .foto-perfil {
-   border: 2px solid white;
-   border-radius: 50px;
-   width: 100px;
-   margin-bottom: 15px;
-   -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.14);
-   -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.14);
-   box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.14);
+   width: 150px;
+   margin: 0 0 15px 50px;
+}
+.foto-perfil-listo {
+   width: 150px;
+   margin: 0 0 15px 15px;
 }
 
 .Nombre {
    font-size: 25px;
+   margin-left: 10px;
 }
 
 .boton {
@@ -97,6 +90,9 @@ body {
 }
 
 .boton:hover {
+   background-color: white;
+   color: black;
+   border: 1px solid black;
    width: 80%;
    height: 30px;
    margin: 15px 10%;
@@ -104,11 +100,15 @@ body {
 
 .cerrar {
    margin-top: 50px;
-   border: 2px solid #ff6363;
-   color: #ff6363;
+   background-color: white;
+   border: 2px solid black;
+   color: black;
 }
 
 .cerrar:hover {
+   background-color: red;
+   color: white;
+   border: 2px solid red;
    width: 80%;
    height: 30px;
    margin: 50px 10%;
@@ -130,7 +130,7 @@ body {
 }
 
 .cursoListo {
-   background-color: rgba(149, 0, 194, 0.7);
+   background-color: #fbb540;
    color: white;
    border-radius: 15px;
    padding: 30px 0;
@@ -162,7 +162,30 @@ body {
 
 .eliminar:hover {
    cursor: pointer;
-   background: rgb(255, 124, 151);
+   background-color: red;
+   border: 2px solid transparent;
+   -webkit-transform: rotate(-90deg);
+   transform: rotate(-90deg);
+}
+
+.editar {
+   text-decoration: none;
+   border: 2px solid white;
+   border-radius: 50px;
+   color: white;
+   height: 25px;
+   width: 25px;
+   outline: none;
+   font-size: 15px;
+   font-weight: 900;
+   padding: 0;
+   transition: 0.1s;
+   text-align: center;
+}
+
+.editar:hover {
+   cursor: pointer;
+   background-color: red;
    border: 2px solid transparent;
    -webkit-transform: rotate(-90deg);
    transform: rotate(-90deg);
@@ -171,6 +194,12 @@ body {
 .columna {
    border: black solid 1px;
    width: 20%;
+   border-radius: 40px;
+   padding: 3px;
+   background-color: white;
+   color: black;
+   display: flex;
+   justify-content: center;
 }
 
 .mas {
@@ -235,7 +264,7 @@ body {
 }
 
 .enviar-curso {
-   background: #9300c0;
+   background-color: #fbb540;
    border: 2px solid transparent;
    border-radius: 50px;
    color: white;
@@ -249,6 +278,7 @@ body {
 }
 
 .enviar-curso:hover {
+   background-color: green;
    cursor: pointer;
    -webkit-transform: rotate(-90deg);
    transform: rotate(-90deg);

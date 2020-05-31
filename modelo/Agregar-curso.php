@@ -20,7 +20,6 @@ $puede_enviar = false;
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    // VALIDANDO INPUT DE NOMBRE DE USUARIO
     if(empty(trim($_POST["fecha_de_inicio"])) || empty(trim($_POST["Horario"])) || empty(trim($_POST["nombre_instructor"])) || empty(trim($_POST["correo_instructor"]))){
         $fecha_de_inicio_alerta = "Por favor, ingrese todos los campos";
     }else{

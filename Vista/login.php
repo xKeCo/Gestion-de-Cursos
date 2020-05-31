@@ -13,10 +13,6 @@
     <?php include '../modelo/login-modelo.php'; ?>
     <section class="seccion-imagen">
         <a href="../index.html" class="icon-cancel boton-salir"></a>
-        <!-- <div class="texto">
-            <h1>Hola</h1>
-            <p>Bienvenido al sistema</p>
-        </div> -->
     </section>
     <div class="seccion-formulario">
         <form class="formulario" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">

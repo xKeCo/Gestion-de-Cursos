@@ -5,10 +5,11 @@
 
 body {
    width: 85vw;
-   height: 100vh;
+   height: 95vh;
    margin: 0 auto;
    font-family: "Open Sans", sans-serif;
    font-weight: normal;
+   background-color: #fafafa;
 }
 
 .nav-bar {
@@ -45,7 +46,7 @@ body {
 .Primera h1 {
    font-size: 80px;
    margin-bottom: 25px;
-   color: #ffd766;
+   color: #fbb540;
 }
 .primera-detalles {
    display: flex;
@@ -76,41 +77,41 @@ body {
 .registrarse {
    height: 30px;
    width: 125px;
-   border: 2px solid #9300c0;
+   border: 2px solid black;
    border-radius: 50px;
    display: flex;
    align-items: center;
    justify-content: center;
    text-align: center;
-   color: #9300c0;
+   color: black;
    text-decoration: none;
 }
 
 .iniciar-sesion {
    height: 30px;
    width: 125px;
-   border: 2px solid #9300c0;
+   border: 2px solid black;
    border-radius: 50px;
    display: flex;
    align-items: center;
    justify-content: center;
    text-align: center;
-   color: white;
-   background-color: #9300c0;
+   color: black;
+   background-color: #fbb540;
    text-decoration: none;
 }
 
 .comenzar {
    height: 45px;
    width: 150px;
-   border: 2px solid #9300c0;
+   border: 2px solid black;
    border-radius: 50px;
    display: flex;
    align-items: center;
    justify-content: center;
    text-align: center;
-   color: white;
-   background-color: #9300c0;
+   color: black;
+   background-color: #fbb540;
    text-decoration: none;
    margin-top: 20px;
 }

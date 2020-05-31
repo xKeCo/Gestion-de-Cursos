@@ -22,12 +22,9 @@
     <section class="perfil">
         <div class="menu">
             <figure>
-                <img src="img/logoblanco.png" class="logo" alt="logo">
+                <img src="img/checklist.svg" class="foto-perfil-listo" alt="foto perfil">
             </figure>
-            <figure>
-                <img src="img/perfil.png" class="foto-perfil" alt="foto perfil">
-            </figure>
-            <p class="Nombre"><strong><?php echo $_SESSION["usuario"]; ?></strong></p>
+            <p class="Nombre">Institucion Educativa <br><strong><?php echo $_SESSION["usuario"]; ?></strong></p>
             <a href="curso.php" class="boton">Agregar Curso</a>
             <a href="cursoListo.php" class="boton">Ver lista de cursos</a>
             <a href="../modelo/cerrar-sesion.php" class="boton cerrar">Cerrar la sesión</a>
@@ -60,6 +57,7 @@
                                 <div class="columna">
                                 <?php echo $row['correoInstructor']?>
                                 </div>
+                                <a class="editar" href="cursoListo.php?editar=<?php echo $row['id'];?>">e</a>
                                 <a class="eliminar" href="cursoListo.php?eliminar=<?php echo $row['id'];?>">x</a>
                             </td>
                         </tr>
