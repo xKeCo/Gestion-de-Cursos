@@ -176,7 +176,3 @@ a {
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-cancel:before {
-   content: "\e801";
-}

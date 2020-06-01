@@ -12,7 +12,7 @@
 <body>
     <?php include '../modelo/login-modelo.php'; ?>
     <section class="seccion-imagen">
-        <a href="../index.html" class="icon-cancel boton-salir"></a>
+        <a href="../index.html" class="icon-cancel boton-salir">X</a>
     </section>
     <div class="seccion-formulario">
         <form class="formulario" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">

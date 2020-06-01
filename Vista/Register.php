@@ -20,7 +20,7 @@
 <body>
     <?php include '../modelo/registro-modelo.php'; ?>
     <section class="seccion-imagen">
-        <a href="../index.html" class="icon-cancel boton-salir"></a>
+        <a href="../index.html" class="icon-cancel boton-salir">X</a>
     </section>
     <div class="seccion-formulario seccion-formulario-register">
         <form class="formulario formulario-register" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">

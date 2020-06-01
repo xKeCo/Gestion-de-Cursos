@@ -18,7 +18,8 @@
     <title>Gestion de cursos</title>
 </head>
 <body>
-<?php include '..//modelo/Agregar-curso.php'; ?>
+<?php include '..//modelo/editarCurso.php'; ?>
+
     <section class="perfil">
         <div class="menu">
             <figure>
@@ -37,13 +38,20 @@
         <div class="div-nuevo-curso">
             <form class="formulario" id="Formu" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                     <div class="contenedor-mensaje-nueva">
-                        <label for="Nuevo-curso"><strong>Nuevo Curso</strong></label> 
+                        <label for="Nuevo-curso"><strong>Editar Curso</strong></label> 
                         <span class="mensaje-error"><?php echo $fecha_de_inicio_alerta; ?></span>
                     </div>
-                    <input require class="input-text linea" type="date" id="Nuevo-curso" placeholder="Fecha de inicio ( Ej. DD/MM/AAAA)" name="fecha_de_inicio">
-                    <!-- <input require class="input-text linea" type="text" id="inicio" placeholder="Horario ( Ej. 10:00 - 11:00 )" name="Horario"> -->
-                    <select require name="Horario" class="input-text linea"id="Nuev-curso">
-                    <option disabled selected>Seleccione su horario</option>
+                    
+                    <?php    
+                    
+                    while($row = mysqli_fetch_array($consultaEditar)){ 
+                            
+                    ?>
+                    <input require value='<?php echo $row['id'] ?>' class="input-text escondido linea" type="text" id="Nuevo-curso" placeholder="ID" name="id">
+                    <input require value='<?php echo $row['fechaInicio'] ?>' class="input-text linea" type="date" id="Nuevo-curso" placeholder="Fecha de inicio ( Ej. DD/MM/AAAA)" name="fecha_de_inicio">
+                    <!-- <input require value='<?php //echo $row['Horario'] ?>' class="input-text linea" type="text" id="Nuevo-curso" placeholder="Horario ( Ej. 10:00 - 11:00 )" name="Horario"> -->
+                    <select name="Horario" class="input-text linea"id="Nuevo-curso">
+                    <option disabled selected class="seleccion">Seleccione su horario</option>
                     <option value="7:00am - 8:00am">7:00am - 8:00am</option>
                     <option value="8:00am - 9:00am">8:00am - 9:00am</option>
                     <option value="9:00am - 10:00am">9:00am - 10:00am</option>
@@ -57,9 +65,12 @@
                     <option value="7:00pm - 8:00pm">7:00pm - 8:00pm</option>
                     <option value="8:00pm - 9:00pm">8:00pm - 9:00pm</option>
                     </select>
-                    <input require class="input-text linea" type="text" id="Nuevo-curso" placeholder="Nombre Instructor" name="nombre_instructor">
-                    <input require class="input-text" type="email" id="Nuevo-curso" placeholder="Correo del Instructor" name="correo_instructor">
-                    <input class="enviar-curso" type="submit"  value="+"><br>       
+                    <input require value='<?php echo $row['nombreInstructor'] ?>' class="input-text linea" type="text" id="Nuevo-curso" placeholder="Nombre Instructor" name="nombre_instructor">
+                    <input require value='<?php echo $row['correoInstructor'] ?>' class="input-text" type="email" id="Nuevo-curso" placeholder="Correo del Instructor" name="correo_instructor">
+                    <button class="enviar-curso" type="submit"  value=""> <img src="img/bxs-pencil.svg" alt="E"> </button><br>    
+                    <?php } ?>
+                        
+                        
             </form>
         </div>
         <span class="mensaje-correcto"><?php echo $fecha_de_inicio_alerta2; ?></span><br>

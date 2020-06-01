@@ -3,6 +3,7 @@
 // Incluir archivo de conexion a la base de datos
 require_once "conexion.php";
 
+
 $id_usuario = $_SESSION["id"];
 
 
@@ -12,6 +13,11 @@ if (isset($_GET['eliminar'])) {
     $id = $_GET['eliminar'];
     mysqli_query($link, "DELETE FROM curso WHERE id = $id");
     header('location: ../vista/cursoListo.php');
+}
+
+if (isset($_GET['editar'])) {
+    $id = $_GET['editar'];
+    header("location: ../vista/editar.php?id=".$id);
 }
 
 ?>

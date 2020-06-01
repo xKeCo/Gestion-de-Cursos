@@ -57,7 +57,7 @@
                                 <div class="columna">
                                 <?php echo $row['correoInstructor']?>
                                 </div>
-                                <a class="editar" href="cursoListo.php?editar=<?php echo $row['id'];?>">e</a>
+                                <a class="editar" href="cursoListo.php?editar=<?php echo $row['id'];?>"><img src="img/bxs-pencil.svg" alt="E"></a>
                                 <a class="eliminar" href="cursoListo.php?eliminar=<?php echo $row['id'];?>">x</a>
                             </td>
                         </tr>
