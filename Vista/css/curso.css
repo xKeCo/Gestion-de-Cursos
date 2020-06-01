@@ -218,13 +218,14 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-   margin: 25% 30%;
+   margin: 20% auto;
 }
 
 .mas:hover {
    cursor: pointer;
-   background: rgb(124, 255, 163);
-   border: 2px solid transparent;
+   color: black;
+   background-color: white;
+   border: 2px solid black;
 }
 
 .cursoListo td {
